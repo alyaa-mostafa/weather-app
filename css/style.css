@@ -1,0 +1,115 @@
+ #section{
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 200px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+}
+.navbar{
+    background-color:#1e202b !important;
+    color: white;
+    padding: 45px;
+}
+.navbar img{
+    height: 40px;
+}
+body{
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #414663;
+}
+.nav-item .nav-link{
+    color: white;
+    padding: 5px 30px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.nav-link:hover{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.find-location{
+    position: relative;
+    
+}
+.find-location input[type="text"]{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+.find-location input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.find-location input[type="button"]{
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 35px;
+    border-radius: 30px;
+    color: white;
+    height: 48px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-color{
+    background-color: #1e202b;
+}
+.second-color{
+background-color: #3a4051;
+}
+.third-color{
+    background-color: #2a2a33;
+}
+.item-footer .footer-icons{
+    width: 20px;
+    height: 20px;
+}
+
+.icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009ad8;
+    background-color: #1e202b;
+    font-size: 23px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.icon i:hover{
+    background-color: #009ad8;
+    color: white;
+}

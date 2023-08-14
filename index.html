@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="./img/logo@2x.png" class="pe-3" alt="logo">
+            <h1 class="fs-5">Weather <br><span class="fs-6 text-secondary">tagline goes here</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-md-2" href="#">live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="section">
+        <div class="container py-4 text-center">
+    <div class="find-location">
+        <input type="text" class="w-100 " placeholder="Enter Your Location...." id="search">
+        <input type="button" value="find" id="submit">
+    </div>            
+    <div class="row mt-5">
+            <div class="col-md-4">
+            <div id="todayDate" class="py-2 px-3 d-flex justify-content-between main-color text-light">
+                <p id="date-Day">sunday</p>
+                <span>
+                    <span id="date-number">23</span>
+                    <span id="month">May</span>
+                </span>
+            </div>
+            <div class="item-content text-start  px-3 pt-5 text-light second-color" id="today">
+                    <p id="today-location" class="fs-4">cairo</p>
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                        <span class="fs-1 fw-bolder">
+                            <span id="today-tem">30</span>
+                            <span><sup>o</sup>c</span>
+                        </span>
+                        <img id="getImg" src="./img/113.png" alt="tem" class="footer-icons ms-5">
+                    </div>
+                    <p id="tody-condition-text" class=" text-info fs-6 ">suuny</p>
+                    <div class="item-footer d-flex text-light p-3 mt-5 pt-5">
+                        <div class="d-flex me-3">
+                            <img src="./img/icon-umberella.png" class="footer-icons me-2" alt="">
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="./img/icon-wind.png" class="footer-icons me-2" alt="">
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/icon-compass.png" class="footer-icons me-2" alt="">
+                            <p id="wind-direction">east</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <!-- ! second Day ===================> -->
+
+            <div class="col-md-4 m-0">
+                <div class="main-color text-center text-light p-2" id="tomrrow-date">
+                    <p id="next-day-name">friday</p>
+                </div>
+                <div class="text-center third-color pt-5 py-5" id="tomrrow">
+                    <img class="next-condition-img" src="./img/113.png" alt="">
+                    <h3>
+                        <span class="next-max-temp pt-5">22</span>
+                        <span><sup>o</sup>c</span>
+                    </h3>
+                    <h5 class="text-light">
+                        <span class="next-min-temp"> 16</span>
+                        <span><sup>o</sup>c</span>
+                    </h5>
+                    <p class="next-condition-text pb-5 pt-4 text-info">sunny</p>
+                </div>
+            </div>
+
+            <!-- ?third Day---------------- -->
+            <div class="col-md-4 m-0">
+                <div class="main-color text-center text-light p-2" id="tomrrow-date">
+                    <p id="next-day-name">friday</p>
+                </div>
+                <div class="text-center second-color pt-5 py-5" id="tomrrow">
+                    <img class="next-condition-img"  src="./img/113.png" alt="">
+                    <h3>
+                        <span class="next-max-temp pt-5">22</span>
+                        <span><sup>o</sup>c</span>
+                    </h3>
+                    <h5 class="text-light">
+                        <span class="next-min-temp"> 16</span>
+                        <span><sup>o</sup>c</span>
+                    </h5>
+                    <p class="next-condition-text pb-5 pt-4 text-info">sunny</p>
+                </div>
+            </div>
+    </div>
+        </div>
+    </section>
+    <section >
+
+        <div class="container">
+            <div class="row mt-5 py-5">
+                <div class="col-md-8">
+                    <div class="find-location">
+                        <input type="text" class="light" placeholder="Enter Your Email to subscribe...">
+                        <input type="button" value="Subscribe" id="submit">
+                    </div> 
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="icons d-flex justify-content-center align-items-center">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f mx-2"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-twitter mx-2"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-google-plus-g mx-2"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-square-pinterest mx-2"></i>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <p>
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+        </div>
+      
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
